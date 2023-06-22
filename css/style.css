@@ -1,0 +1,16 @@
+#siteImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 10px;
+  border-bottom: 10px;
+  border-left: 10px;
+  border-right: 10px;
+  border-color: black;
+  border-style: double;
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
