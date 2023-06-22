@@ -1,23 +1,53 @@
+const hoursOpen = [
+  '6am',
+  '7am',
+  '8am',
+  '9am',
+  '10am',
+  '11am',
+  '12pm',
+  '1pm',
+  '2pm',
+  '3pm',
+  '4pm',
+  '5pm',
+  '6pm',
+  '7pm',
+  '8pm',
+];
+
 const Seattle = {
   name: 'Seattle',
   minCust: 23,
   maxCust: 65,
   aveCookieSales: 6.3,
-  randomInteger: function() {
-    return Math.floor(Math.random() * (this.maxCust - this.minCust) + this.maxCust);
-  }
+  randomInteger: function () {
+    return Math.floor(
+      Math.random() * (this.maxCust - this.minCust) + this.maxCust
+    );
+  },
 };
-function cookieCount (city) {
-  let h2 = document.createElement('h2');
-  h2.innerText = city.name; 
-  let main = document.getElementById('cities');
-  main.appendChild(h2);
-  let ul = document.createElement('ul');
-    let li = document.createElement('li');
-    li.innerText = city.randomInteger();
-  ul.appendChild(li);
-  main.appendChild(ul);
-}
-// for (let i = 0; i < 14; i++) {
-// }
-cookieCount (Seattle);
+const tokyo = {
+  name: 'Tokyo',
+  minCust: 3,
+  maxCust: 24,
+  aveCookieSales: 1.2,
+};
+const dubai = {
+  name: 'Dubai',
+  minCust: 11,
+  maxCust: 38,
+  aveCookieSales: 3.7,
+};
+const paris = {
+  name: 'Paris',
+  minCust: 20,
+  maxCust: 38,
+  aveCookieSales: 2.3,
+};
+const lima = {
+  name: 'Lima',
+  minCust: 2,
+  maxCust: 16,
+  aveCookieSales: 4.6,
+};
