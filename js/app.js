@@ -93,8 +93,7 @@ function cookieCount(city) {
   total.innerText = `Total: ${totalSales} cookies`;
   ul.appendChild(total);
 }
-// for (let i = 0; i < 14; i++) {
-// }
+
 cookieCount(seattle);
 cookieCount(tokyo);
 cookieCount(dubai);
