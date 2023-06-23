@@ -73,15 +73,12 @@ City.prototype.render = function () {
     td.innerText = hourlySales;
     cityDataRow.appendChild(td);
     totalSales += hourlySales;
-    console.log(i, hoursOpen.length);
     if (i === 13) {
       let totalTh = document.createElement('td');
       totalTh.innerText = totalSales;
       cityDataRow.appendChild(totalTh);
-      console.log('random text');
     }
   }
-  console.log(citySales);
   cityArray.push(citySales);
 };
 function footerFunction() {
@@ -92,16 +89,28 @@ function footerFunction() {
   let tr = document.createElement('tr');
   tfoot.appendChild(tr);
   tr.appendChild(td);
-  for (let i = 0; i < cityArray; i++) {
-    let total = 0;
+  const totalOfTotals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  for (let i = 0; i < 14; i++) {
+    for (let j = 0; j < cityArray.length; j++) {
+      totalOfTotals[i] += cityArray[j][i];
+    }
   }
+  for (let i = 0; i < totalOfTotals.length; i++) {
+    let td = document.createElement('td');
+    td.innerText = totalOfTotals[i];
+    tr.appendChild(td);
+  }
+  const sum = totalOfTotals.reduce((acc,curr) => {
+    return acc + curr;
+  },0);
+  td = document.createElement('td');
+  td.innerText = sum;
+  tr.appendChild(td);
 }
 
-console.log(City);
 seattle.render();
 tokyo.render();
 dubai.render();
 paris.render();
 lima.render();
 footerFunction();
-console.log(cityArray);
