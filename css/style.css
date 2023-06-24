@@ -15,22 +15,24 @@ h1 {
   font-family: sans-serif;
 }
 
-th {
-  inline-size: 90px;
-  align-tracks: auto;
+td {
+  border: 1px solid red;
+  width: 200px;
+  text-align: center;
 
 }
 
 table {
-  display: block;
-  margin-left: auto;
-  margin-right: 600px;
-  border-top: 10px;
-  border-bottom: 10px;
-  border-left: 10px;
-  border-right: 10px;
-  border-color: black;
+  border-style: groove;
+  border-color: red;
   border-style: double;
+  background-color: lightblue;
+}
+
+tbody tr:nth-child(even){
+  background-color: grey;
   
- 
+}
+tfoot {
+  background-color: grey;
 }
