@@ -22,17 +22,36 @@ h1 {
   gap: 50px;
 }
 
+
 li :hover {
   color: red;
 }
 
+h2 {
+  font-size: 50px;
+  
+}
+
+h3 {
+  font-size: 40px;
+  background-color: #00d4ff;
+  padding-bottom: 10px;
+  padding-top: 10px;
+ }
+
 .CookieLocations1 {
   text-align: center;
+  
 }
 
 .CookieLocations1 li {
   list-style-type: none;
+  background-color: #79f4b7;
+  font-size: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
+
 .CookieLocations2 {
   text-align: center;
 }
