@@ -9,6 +9,27 @@ li :hover {
   color: red;
 }
 
+.CookieLocations1 {
+  text-align: center;
+}
+
+.CookieLocations1 li {
+  list-style-type: none;
+}
+.CookieLocations2 {
+  text-align: center;
+}
+
+.CookieLocations2 li {
+  list-style-type: none;
+}
+
+footer {
+  text-align: center;
+  gap: 30px;
+}
+
+/* Everything Below is Sales */
 td {
   border: 1px solid black;
   width: 200px;
