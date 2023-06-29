@@ -20,17 +20,17 @@
       </div>
     </header>
   <main id="cities">
-    <form id="cookieStandAddition">
+     <form id="cookieStandAddition">
       <fieldset>
         <legend>Additional Cookie Stand</legend>
         <label for="cityName">Enter City</label>
-        <input type="text" name="cityName"id="cityName">
+        <input type="text" name="cityName"id="cityName" required>
         <label for="maxCust">Minimum Customer Sales</label>
-        <input type="text" name="maxCust"id="maxCust">
+        <input type="number" min="0" max="999" name="maxCust"id="maxCust" required>
         <label for="minCust">Maximum Customer Sales</label>
-        <input type="text" name="minCust" id="minCust">
+        <input type="number" min="0" max="999" name="minCust" id="minCust" required>
         <label for="aveCookieSales">Average Cookie Sales</label>
-        <input type="text" name="aveCookieSales" id="aveCookieSales">
+        <input type="text" min="0" max="999" name="aveCookieSales" id="aveCookieSales" required>
         <button type="submit">Submit</button>
       </fieldset>
      </form>
