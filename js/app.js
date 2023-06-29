@@ -63,8 +63,8 @@ function addItem() {
       const minCust = event.target.minCust.value;
       const aveCookieSales = event.target.aveCookieSales.value;
       let addCity = new City(cityName, maxCust, minCust, aveCookieSales);
-      allCities.push(addCity);
       addCity.render();
+      newFooterFunction();
 
       console.log(event.target.maxCust.value);
     }
@@ -131,4 +131,9 @@ for (let i = 0; i < allCities.length; i++) {
   allCities[i].render();
 }
 
+function newFooterFunction() {
+  let tfoot = document.querySelector('tfoot');
+  tfoot.remove();
+  footerFunction();
+}
 footerFunction();
